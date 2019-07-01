@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %}邮件我{% endblock %}
+{% block head %}
+<link href="/static/assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="/static/assets/css/font-awesome.min.css" rel="stylesheet">
+<!-- magnific-popup Css-->
+<link href="/static/assets/css/magnific-popup.css" rel="stylesheet">
+<!--lineProgressbar Css-->
+<link href="/static/assets/css/jquery.lineProgressbar.css" rel="stylesheet">
+<!--owl.carousel Css-->
+<link href="/static/assets/css/owl.carousel.css" rel="stylesheet">
+<!--Slick Nav Css-->
+<link href="/static/assets/css/slicknav.min.css" rel="stylesheet">
+<!--Animate Css-->
+<link href="/static/assets/css/animate.css" rel="stylesheet">
+<!--Style Css-->
+<link href="/static/assets/css/style.css" rel="stylesheet">
+<!--Responsive Css-->
+<link href="/static/assets/css/responsive.css" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<section class="contact-area" id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<div class="section-title main">
+					<h2>Contact Me</h2>
+					<p>记得联系我 ！</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-12">
+				<div class="single-contact-box">
+					<div class="icon">
+						<img src="/static/assets/img/contact-icon-2.png" alt="contact icon">
+					</div>
+					<h4>Email</h4>
+					<p>coolcahng@gmail.com</p>
+				</div>
+				<div class="single-contact-box">
+					<div class="icon">
+						<img src="/static/assets/img/contact-icon-1.png" alt="contact icon">
+					</div>
+					<h4>Location</h4>
+					<p>上海 浦东新区</p>
+				</div>
+				<div class="single-contact-box">
+					<div class="icon">
+						<img src="/static/assets/img/contact-icon-3.png" alt="contact icon">
+					</div>
+					<h4>Phone</h4>
+					<p>+ 86 18580467081</p>
+				</div>
+			</div>
+			<div class="col-md-8 col-sm-12" >
+				<div class="contact-form-wrapper">
+					<form method="POST">
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								<input type="text" placeholder="Enter Name" id="form-name" name="form-name" >
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<input type="email" placeholder="Enter Email" id="form-email" name="form-email" >
+							</div>
+							<div class="col-md-12">
+								<input type="text" placeholder="Enter Sujbect" id="form-subject" name="form-subject">
+								<textarea name="form-message" id="form-message" cols="30" rows="10" placeholder="Meassage" ></textarea>
+							</div>
+						</div>
+						<input type="submit" value="点击发邮件给我" name="send message" class="boxed-btn"  onclick="alert('邮件发送成功')">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--contact section end-->
+<footer class="footer-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<ul class="social-area">
+					<li><a href="https://github.com/CarryChang"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://twitter.com/CarryChang4"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://about.me/CarryChang"><i class="fa fa-user-circle-o"></i></a></li>
+					<li><a href="http://coolcahng@gmail.com"><i class="fa fa-envelope-square"></i></a></li>
+				</ul>
+				<div class="copyright-text">
+					<p> <a href="/" target="_blank" title="Make the World Better">Make the World Better</a> </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="/static/assets/js/jquery.js"></script>
+<!--Isotope script load-->
+<script src="/static/assets/js/isotope.pkgd.js"></script>
+<!-- magnific popup script load-->
+<script src="/static/assets/js/jquery.magnific-popup.js"></script>
+<!--way point script load-->
+<script src="/static/assets/js/waypoints.min.js"></script>
+<!--line progress bar script load-->
+<script src="/static/assets/js/circle-progress.min.js"></script>
+<!-- counter up script load-->
+<script src="/static/assets/js/typed.js"></script>
+<!-- typed script load-->
+<script src="/static/assets/js/jquery.counterup.min.js"></script>
+<!--Owl carousel script load-->
+<script src="/static/assets/js/owl.carousel.min.js"></script>
+<!--Image load script -->
+<script src="/static/assets/js/imagesloaded.pkgd.js"></script>
+<!--Bootstrap v3 script load here-->
+<script src="/static/assets/js/bootstrap.min.js"></script>
+<!--Slick Nav Js File Load-->
+<script src="/static/assets/js/jquery.slicknav.min.js"></script>
+<!--Wow Js File Load-->
+<script src="/static/assets/js/wow.min.js"></script>
+<!--Wow Js File Load-->
+<script src="/static/assets/js/scrollspy.js"></script>
+<!--Main js file load-->
+<script src="/static/assets/js/main.js"></script>
+
+{% endblock %}

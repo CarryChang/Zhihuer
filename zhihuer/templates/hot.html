@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}热点分析{% endblock %}
+{% block body %}
+<input type="hidden" id ="OutPut" name ="OutPut"  value="{{ li  | safe}}">
+<center>
+    <div id="main" style="width: 1000px;height:600px;">
+    </div>
+</center>
+<script src="static/js/jquery.js"></script>
+<script type="text/javascript" src="static/js/echarts-all.js"></script>
+<script type=text/javascript>
+    var obj =  $("#OutPut").val();
+    var objnew = obj.replace(/'/g, '"');
+    // console.log(obj);
+    var obj1 =  JSON.parse(objnew);
+    var time = obj1.time;
+    var point = obj1.point;
+    var title = obj1.title;
+    var rank = obj1.rank;
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        title: {
+            text: title[0]
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['rank','hot_point']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: time
+        },
+        yAxis: {
+            type: 'value',
+        },
+        series: [
+            {
+                name:'rank',
+                type:'line',
+                stack: '总量',
+                data:rank
+            },
+            {
+                name:'hot_point',
+                type:'line',
+                stack: '总量',
+                data:point
+            },
+        ]
+    };
+    // // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+{% endblock %}

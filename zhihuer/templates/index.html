@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}热点助手{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+{% endblock %}
+{% block body %}
+<form class="form-inline my-2 my-lg-0" role="search" method="post" >
+    <div style="width: 100%;text-align:center">
+        <br>
+        <br>
+        <img src=" static/logo/logo.png"/></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="text" class="form-control" name="hot_id" placeholder="输入当前知乎热点事件ID或者名字" style="width:500px; height:45px;" >
+        <span class="input-group-btn">
+        <button type="submit" class="btn btn-outline-success my-2 my-sm-0" style="width:90px; height:45px;">搜索</button>
+        </span></div>
+</form>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+{% endblock %}
